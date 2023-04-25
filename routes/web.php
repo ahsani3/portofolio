@@ -19,6 +19,37 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/about', function () {
+    return view('about', [
+        "title" => "About"
+    ]);
+});
+
+Route::get('/blog', function () {
+    return view('blog', [
+        "title" => "Blog"
+    ]);
+});
+
+Route::get('/blog-single', function () {
+    return view('blog-single', [
+        "title" => "Blog"
+    ]);
+});
+
+Route::get('/portfolio', function () {
+    return view('portfolio', [
+        "title" => "Portfolio"
+    ]);
+});
+
+Route::get('/contact', function () {
+    return view('contact', [
+        "title" => "Contact"
+    ]);
+});
+
+
 Route::get('/admin', function () {
     return view('admin/home', [
         "title" => "Dashboard"
